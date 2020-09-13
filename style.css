@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono&display=swap');
+
+/*
+font-family: 'Oxygen', sans-serif;
+font-family: 'Oxygen Mono', monospace;
+*/
+* {
+	overflow-x: hidden;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	cursor: url('cur/Normal.cur'), auto;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	cursor: url('cur/Select.cur'), auto;
+}
+
+h1 {
+	font-family: 'Oxygen Mono', monospace;
+}
+
+header {
+	background-image: url("img/juice.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+nav {
+  margin-top: 2%;
+  height: 10%; /* Set your own height: percents, ems, whatever! */
+  width: 50%; /* Set your own width: percents, ems, whatever! */
+  overflow: auto; /* Recommended in case content is larger than the container */
+  margin-left: auto; /* Center the item vertically & horizontally */
+  margin-right: auto;
+  position: absolute; /* Break it out of the regular flow */
+  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
+}
+
+nav a {
+	font-family: 'Oxygen Mono', monospace;
+	font-size: 1.3em;
+	text-decoration: none;
+	color: white;
+	margin-left: 1em;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+hr {
+	border: 10px solid grey;
+	margin: 0;
+}
+
+.transition a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.info1 a {
+	font-weight: bold;
+	color:#FF33EE;
+}
+
+.transition a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.newsbar {
+	margin: auto;
+	background-color: yellow;
+	color: black;
+	font-size: 1.5em;
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.container {
+	width: 70%;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+.font {
+	font-family: 'Oxygen Mono', monospace;
+}
+
+.header {
+  height: 100vh; 
+  font-size: 2.5em;
+}
+
+.centered {
+	display: flex;
+ 	justify-content: center;
+  	align-items: center;
+}
+
+.box {
+	padding: 1em;
+	border: 2px solid white;
+	background-color: rgba(0, 0, 0, 50%);
+}
+
+.logo {
+	position: absolute;
+	margin-left: 2%;
+	font-size: 0.7em;
+	color: rgba(255, 255, 255, 0.9);
+	/*background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	color: linear-gradient(to right, red, yellow);*/
+}
+
+/*.icon {
+	font-size: 3em;
+	color: white;
+	text-align: center;
+	position: relative;
+	margin-bottom: 10%;
+}*/
+
+.rapper {
+	background-image: url("img/rapper.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.info1 {
+	background-color: rgba(28, 27, 32, 0.1);
+	color: white;
+	max-width: 100%;
+	padding: 1em;
+	width: 100%;
+}
+
+img.juice {
+	width: 100%;
+	margin: auto;
+}
+
+.link {
+	max-height: 100%;
+}
+
+.test-border {
+	border: 1px solid red;
+	width: 100%;
+}
+
+ul {
+	list-style-type: circle;
+	padding: 0;
+	font-size: 1.1em;
+}
+
+.hey {
+	background-image: url("img/juice_smoke.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	height: 100%;
+}
+
+.bg2 {
+	background-color: black;
+	color: white;
+  	width: 100%;
+  	display: flex;
+  	justify-content: center;
+  	margin: -0.5vh -0.5vh;
+}
+
+.bg2 li {
+	display: inline-block;
+}
+
+q {
+	background-color: rgba(0,0,255,0.7);
+}
+
+main h2 {
+	margin-top: -3%;
+}
+
+main p {
+	margin-top: -3%;
+}s
+
+@media screen and (max-width: 800px){
+	.box {
+		width: 30%;
+		margin: auto;
+	}
+
+	header h1 {
+		font-size: 1em;
+	}
+
+	nav a {
+		font-size: 0.78em;
+		margin-top: 1vh;
+	}
+
+	.flex-container {
+		width: 100%;
+	}
+
+	main img {
+		visibility: hidden;
+	}
+
+	.hey {
+		display: none;
+	}
+}
